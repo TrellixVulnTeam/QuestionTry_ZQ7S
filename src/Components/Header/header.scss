@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem;
+  font-size: 15px;
+  background-color: #eae9f3;
+  border: 1px solid #ccc;
+  box-sizing: 0 2px 2px rgba(black, 0.2);
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+}

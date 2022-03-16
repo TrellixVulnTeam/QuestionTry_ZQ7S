@@ -1,0 +1,184 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "datetime": "August 02, 2021 11:46:27 AM",
+      "body": "Pitanje 4",
+      "email": "anelseha2@hotmail.com"
+    },
+    {
+      "id": 5,
+      "datetime": "March 15, 2022 3:27:36 PM",
+      "body": "aaaa",
+      "comments": null
+    },
+    {
+      "id": 6,
+      "datetime": "March 15, 2022 3:40:42 PM",
+      "body": "ffffffffffff",
+      "comments": null
+    },
+    {
+      "id": 7,
+      "datetime": "March 15, 2022 3:42:51 PM",
+      "body": "gegeg",
+      "comments": [
+        "aaaa"
+      ]
+    },
+    {
+      "id": 8,
+      "datetime": "March 15, 2022 3:46:41 PM",
+      "body": "aaa",
+      "comments": null
+    },
+    {
+      "id": 9,
+      "datetime": "March 15, 2022 3:47:23 PM",
+      "body": "momcino",
+      "comments": null
+    },
+    {
+      "id": 10,
+      "datetime": "March 15, 2022 3:48:17 PM",
+      "body": "dadadadad",
+      "comments": null
+    },
+    {
+      "id": 11,
+      "datetime": "March 15, 2022 3:53:51 PM",
+      "body": "jjjjjjjjj",
+      "comments": null
+    },
+    {
+      "id": 12,
+      "datetime": "March 15, 2022 4:15:07 PM",
+      "body": "aaaaa",
+      "comments": null
+    },
+    {
+      "id": 13,
+      "datetime": "March 15, 2022 4:19:39 PM",
+      "body": "aaaa",
+      "comments": null
+    },
+    {
+      "id": 14,
+      "datetime": "March 15, 2022 4:20:51 PM",
+      "body": "aaaaaaaaaaaaaaaaaa",
+      "comments": null
+    },
+    {
+      "body": [
+        null,
+        "kkkk"
+      ],
+      "id": 15
+    },
+    {
+      "body": [
+        null,
+        "kkkk"
+      ],
+      "id": 16
+    },
+    {
+      "body": [
+        null,
+        "kkkk"
+      ],
+      "id": 17
+    },
+    {
+      "body": [
+        null,
+        "HEEEEEEEEEEEEJ"
+      ],
+      "id": 18,
+      "comments": [
+        "aaaa"
+      ]
+    },
+    {
+      "body": [
+        null,
+        "jjjjjjjjj"
+      ],
+      "id": 19
+    },
+    {
+      "body": [
+        null,
+        "nnnnnnnnnnn"
+      ],
+      "id": 20
+    },
+    {
+      "body": [
+        null,
+        "ahm\n"
+      ],
+      "id": 21
+    },
+    {
+      "body": [
+        null,
+        "mmmmmmmmmm"
+      ],
+      "id": 22
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ansel 1",
+      "email": "anelseha@hotmail.com",
+      "Question": []
+    },
+    {
+      "id": 2,
+      "name": "Ansel 2",
+      "email": "anelseha2@hotmail.com",
+      "Question": []
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "faruk",
+      "email": "faruk.alibasic@gmail.com",
+      "password": "123",
+      "confirmPassword": "asdasd",
+      "id": 5,
+      "Question": []
+    },
+    {
+      "name": "neko treci",
+      "email": "faruk.alibasic@gmail.com",
+      "password": "asdasd",
+      "confirmPassword": "asdasd",
+      "id": 6
+    },
+    {
+      "name": "anllq",
+      "email": "anelseha@hotmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": 7
+    },
+    {
+      "name": "anllq",
+      "email": "anelseha@hotmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 8
+    },
+    {
+      "name": "anllq",
+      "email": "aaadasdasda",
+      "password": "555",
+      "confirmPassword": "555",
+      "id": 9
+    }
+  ]
+}
