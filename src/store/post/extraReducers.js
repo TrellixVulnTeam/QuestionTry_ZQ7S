@@ -1,4 +1,10 @@
-import { fetchPosts, addComment } from "./actions";
+import {
+  fetchPosts,
+  addComment,
+  deletePost,
+  updatePost,
+  LikePost,
+} from "./actions";
 
 export const extraReducers = (builder) => {
   builder
@@ -11,7 +17,7 @@ export const extraReducers = (builder) => {
     })
     .addCase(fetchPosts.rejected, (state, action) => {
       state.loading = false;
-      state.errror = true;
+      state.error = true;
     })
     .addCase(addComment.fulfilled, (state, action) => {
       state.loading = false;
@@ -21,5 +27,36 @@ export const extraReducers = (builder) => {
       );
 
       state.posts[index] = action.payload;
+    })
+    .addCase(deletePost.pending, (state, action) => {
+      state.loading = true;
+    })
+    .addCase(deletePost.fulfilled, (state, action) => {
+      state.loading = false;
+      state.posts = [action.payload];
+    })
+    .addCase(deletePost.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    })
+    .addCase(updatePost.pending, (state, action) => {
+      state.loading = true;
+    })
+    .addCase(updatePost.fulfilled, (state, action) => {
+      state.loading = false;
+      state.posts = [action.payload];
+    })
+    .addCase(updatePost.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    })
+    .addCase(LikePost.fulfilled, (state, action) => {
+      state.loading = false;
+
+      const Likes = state.posts.findIndex(
+        (post) => post.id === action.payload.id
+      );
+
+      state.posts[Likes] = action.payload;
     });
 };

@@ -26,3 +26,52 @@ export const addComment = createAsyncThunk(
     return post;
   }
 );
+
+export const deletePost = createAsyncThunk(
+  "post/deletePost",
+  async ({ postId }) => {
+    return fetch(`http://localhost:5000/posts/${postId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => res.json());
+  }
+);
+
+export const updatePost = createAsyncThunk(
+  "post/addQuestion",
+  async ({ body, postId }) => {
+    const response = await fetch(`http://localhost:5000/posts/${postId}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        postId,
+        body,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const post = await response.json();
+
+    return post;
+  }
+);
+
+export const LikePost = createAsyncThunk(
+  "post/addComment",
+  async ({ Likes, postId }) => {
+    const response = await fetch(`http://localhost:5000/posts/${postId}`, {
+      method: "POST",
+      body: JSON.stringify({
+        Likes,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const post = await response.json();
+
+    return post;
+  }
+);

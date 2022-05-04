@@ -7,17 +7,11 @@ import { Button, Comment, Form } from "semantic-ui-react";
 import { Grid, TextField, Paper, Typography } from "@material-ui/core";
 
 import api from "../../Api/db.json";
-import { ChangePassword } from "../../store/ChangePassword/actions";
 
 const EditProfile = ({ userId, password }) => {
   const [value, setValue] = React.useState("");
 
   const dispatch = useDispatch();
-
-  const changePass = () => {
-    console.log(changePass);
-    dispatch(ChangePassword({ password: [...password, value], userId }));
-  };
 
   const handleChange = () => {};
 
@@ -25,7 +19,7 @@ const EditProfile = ({ userId, password }) => {
     <>
       <div className="Login-text">ChangePassword</div>
       <div style={{ padding: 150 }}>
-        <form onSubmit={changePass}>
+        <form onSubmit={""}>
           <Paper>
             <Grid
               container

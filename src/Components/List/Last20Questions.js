@@ -12,6 +12,13 @@ import { AddReply } from "./AddReply";
 import Question from "../Post/Question";
 import { QuestionAdd } from "./AddQuestion";
 
+import {
+  deletePost,
+  getPost,
+  setEdit,
+  updatePost,
+} from "../../store/post/actions";
+
 const ListQuestionsOnly = () => {
   const { posts, loading, isLoggedIn } = useSelector((store) => {
     return {
@@ -32,7 +39,7 @@ const ListQuestionsOnly = () => {
     <>
       <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
         <Paper style={{ padding: "40px 20px" }}>
-          {isLoggedIn && <QuestionAdd />}
+          <QuestionAdd />
         </Paper>
 
         <ListItem alignItems="flex-start">

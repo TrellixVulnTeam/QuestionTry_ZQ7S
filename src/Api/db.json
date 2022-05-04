@@ -1,131 +1,124 @@
 {
   "posts": [
     {
-      "id": 4,
-      "datetime": "August 02, 2021 11:46:27 AM",
-      "body": "Pitanje 4",
-      "email": "anelseha2@hotmail.com"
-    },
-    {
-      "id": 5,
-      "datetime": "March 15, 2022 3:27:36 PM",
-      "body": "aaaa",
-      "comments": null
-    },
-    {
-      "id": 6,
-      "datetime": "March 15, 2022 3:40:42 PM",
-      "body": "ffffffffffff",
-      "comments": null
-    },
-    {
-      "id": 7,
-      "datetime": "March 15, 2022 3:42:51 PM",
-      "body": "gegeg",
-      "comments": [
-        "aaaa"
-      ]
-    },
-    {
-      "id": 8,
-      "datetime": "March 15, 2022 3:46:41 PM",
-      "body": "aaa",
-      "comments": null
-    },
-    {
-      "id": 9,
-      "datetime": "March 15, 2022 3:47:23 PM",
-      "body": "momcino",
-      "comments": null
-    },
-    {
-      "id": 10,
-      "datetime": "March 15, 2022 3:48:17 PM",
-      "body": "dadadadad",
-      "comments": null
-    },
-    {
-      "id": 11,
-      "datetime": "March 15, 2022 3:53:51 PM",
-      "body": "jjjjjjjjj",
-      "comments": null
-    },
-    {
-      "id": 12,
-      "datetime": "March 15, 2022 4:15:07 PM",
-      "body": "aaaaa",
-      "comments": null
-    },
-    {
-      "id": 13,
-      "datetime": "March 15, 2022 4:19:39 PM",
-      "body": "aaaa",
-      "comments": null
-    },
-    {
-      "id": 14,
-      "datetime": "March 15, 2022 4:20:51 PM",
-      "body": "aaaaaaaaaaaaaaaaaa",
-      "comments": null
+      "body": [
+        null,
+        "asasda"
+      ],
+      "id": 48,
+      "likes": []
     },
     {
       "body": [
         null,
-        "kkkk"
+        "dadadada"
       ],
-      "id": 15
+      "id": 49
     },
     {
       "body": [
         null,
-        "kkkk"
+        "dadadsdadwede"
       ],
-      "id": 16
+      "id": 50
     },
     {
       "body": [
         null,
-        "kkkk"
+        "dadadsdadwede"
       ],
-      "id": 17
+      "id": 51
     },
     {
       "body": [
         null,
-        "HEEEEEEEEEEEEJ"
+        "dadadsdadwede"
       ],
-      "id": 18,
-      "comments": [
-        "aaaa"
-      ]
+      "id": 52
     },
     {
       "body": [
         null,
-        "jjjjjjjjj"
+        "dadadsdadwede"
       ],
-      "id": 19
+      "id": 53
     },
     {
       "body": [
         null,
-        "nnnnnnnnnnn"
+        "dadadsdadwede"
       ],
-      "id": 20
+      "id": 54
     },
     {
       "body": [
         null,
-        "ahm\n"
+        "dadadsdadwede"
       ],
-      "id": 21
+      "id": 55
     },
     {
       "body": [
         null,
-        "mmmmmmmmmm"
+        "dadadsdadwede"
       ],
-      "id": 22
+      "id": 56
+    },
+    {
+      "body": [
+        null,
+        "dadadsdadwede"
+      ],
+      "id": 57
+    },
+    {
+      "body": [
+        null,
+        "aa"
+      ],
+      "id": 58
+    },
+    {
+      "body": [
+        null,
+        "bb"
+      ],
+      "id": 59
+    },
+    {
+      "body": [
+        null,
+        "bb"
+      ],
+      "id": 60
+    },
+    {
+      "body": [
+        null,
+        "bb"
+      ],
+      "id": 61
+    },
+    {
+      "body": [
+        null,
+        "dada"
+      ],
+      "id": 62
+    },
+    {
+      "body": [
+        null,
+        "aaa"
+      ],
+      "id": 63
+    },
+    {
+      "body": [
+        null,
+        "ada"
+      ],
+      "id": 64
     }
   ],
   "users": [
@@ -179,6 +172,62 @@
       "password": "555",
       "confirmPassword": "555",
       "id": 9
+    },
+    {
+      "name": "anllq",
+      "email": "anelseha@hotmail.com",
+      "password": "jjjnnj",
+      "confirmPassword": "njnjjn",
+      "id": 10
+    },
+    {
+      "name": "gggf",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "dgfgdgdgd",
+      "id": 11
+    },
+    {
+      "name": "gggf",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "dgfgdgdgd",
+      "id": 12
+    },
+    {
+      "name": "gggf",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "dgfgdgdgd",
+      "id": 13
+    },
+    {
+      "name": "gggf",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "dgfgdgdgd",
+      "id": 14
+    },
+    {
+      "name": "esdsf",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "234234",
+      "id": 15
+    },
+    {
+      "name": "esdsf",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "234234",
+      "id": 16
+    },
+    {
+      "name": "123123",
+      "email": "faruk",
+      "password": "123",
+      "confirmPassword": "1231231",
+      "id": 17
     }
   ]
 }

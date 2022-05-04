@@ -11,15 +11,9 @@ export const extraReducers = (builder) => {
     })
     .addCase(fetchPosts.rejected, (state, action) => {
       state.loading = false;
-      state.errror = true;
+      state.error = true;
     })
     .addCase(addQuestion.fulfilled, (state, action) => {
       state.loading = false;
-
-      const index = state.posts.findIndex(
-        (post) => post.id === action.payload.id
-      );
-
-      state.posts[index] = action.payload;
     });
 };
