@@ -16,13 +16,17 @@ const Register = ({ onRegister }) => {
     password: "",
     confirmPassword: "",
   });
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   const { name, email, password, confirmPassword } = userDetails;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setUserDetails({ ...userDetails, [name]: value });
+
   };
+
+
 
   const createUser = async () => {
     await fetch("http://localhost:5000/users", {
@@ -34,11 +38,33 @@ const Register = ({ onRegister }) => {
     });
   };
 
+
+
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await createUser();
-    onRegister();
+
+
+    if (password !== confirmPassword) {
+      return setShowErrorMessage(true);
+    } else {
+      await createUser();
+      onRegister();
+
+    }
+
+    localStorage.setItem("username", JSON.stringify(name));
+    localStorage.setItem(
+      "password",
+      JSON.stringify(password)
+    );
+
   };
+
+
+
+
+
 
   return (
     <>
@@ -93,6 +119,8 @@ const Register = ({ onRegister }) => {
                   required
                 />
               </Grid>
+              <Typography>              {showErrorMessage ? <div> Passwords did not match </div> : ''}
+              </Typography>
               <Typography>Already Have Acc ? </Typography>
               <Grid item xs={12}>
                 <Button type="submit" fullWidth>

@@ -40,7 +40,7 @@ export const deletePost = createAsyncThunk(
 );
 
 export const updatePost = createAsyncThunk(
-  "post/addQuestion",
+  "post/updatePost",
   async ({ body, postId }) => {
     const response = await fetch(`http://localhost:5000/posts/${postId}`, {
       method: "PUT",
@@ -59,7 +59,7 @@ export const updatePost = createAsyncThunk(
 );
 
 export const LikePost = createAsyncThunk(
-  "post/addComment",
+  "post/LikePost",
   async ({ Likes, postId }) => {
     const response = await fetch(`http://localhost:5000/posts/${postId}`, {
       method: "POST",

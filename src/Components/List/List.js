@@ -14,10 +14,7 @@ import { AddReply } from "./AddReply";
 import { QuestionAdd } from "./AddQuestion";
 import List20Questions from "./Last20Questions";
 import { DeletePost } from "./DeleteButton";
-import { AddLike } from "../List/Likes";
-import { deletePost, setEdit, updatePost } from "../../store/post/actions";
 
-import { onUpdatePost } from "../List/UpdatePost";
 
 const Lista = () => {
   const { posts, loading, isLoggedIn } = useSelector((store) => {
@@ -73,12 +70,7 @@ const Lista = () => {
             primary="List All Questions and comments , ASK IF YOU ARE LOGGED"
             secondary={
               <React.Fragment>
-                <Typography
-                  sx={{ display: "inline" }}
-                  component="span"
-                  variant="body2"
-                  color="text.primary"
-                ></Typography>
+          
                 {posts.map((post) => (
                   <div>
                     <Paper style={{ padding: "40px 20px" }}>
@@ -98,13 +90,13 @@ const Lista = () => {
 
                         <Grid justifyContent="right" item xs zeroMinWidth>
                           <p>{post.body}</p>
-                        </Grid>
-                        <AddLike />
+                        </Grid >
                       </Grid>
                       <Grid></Grid>
 
                       {isLoggedIn && (
                         <AddReply
+                       
                           postId={post.id}
                           comments={post.comments || []}
                         />

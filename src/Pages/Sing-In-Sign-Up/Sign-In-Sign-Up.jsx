@@ -6,6 +6,8 @@ import Register from "../../Components/Sign-Up/Sign-Up";
 import { useDispatch, useSelector } from "react-redux";
 import { setIsLoggedIn } from "../../store/user/reducer";
 
+import { useNavigate } from "react-router-dom";
+
 const SignInAndSignUp = () => {
   const [visible, setVisible] = useState(false);
 
@@ -16,6 +18,8 @@ const SignInAndSignUp = () => {
     setVisible(!visible);
   };
 
+  const navigate = useNavigate()
+
   const handleRegister = () => {
     setVisible(false);
   };
@@ -23,14 +27,16 @@ const SignInAndSignUp = () => {
   const logOut = () => {
     dispatch(setIsLoggedIn(false));
   };
-
   if (isLoggedIn) {
+    navigate('/')
     return (
       <Button onClick={logOut} fullWidth>
         Logout
       </Button>
     );
   }
+
+
 
   return (
     <div>

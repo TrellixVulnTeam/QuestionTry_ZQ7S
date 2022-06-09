@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Button, Form } from "semantic-ui-react";
-import { deletePost } from "../../store/post/actions";
+import { deletePost, fetchPosts } from "../../store/post/actions";
 
 import { useSelector } from "react-redux";
 
@@ -10,9 +10,11 @@ export const DeletePost = ({ postId }) => {
 
   const onDeletePost = () => {
     console.log(deletePost);
-    dispatch(deletePost({ postId: postId }));
+    dispatch(deletePost({ postId: postId}));
+  
   };
 
+ 
   return (
     <Form DeletePost>
       <Button

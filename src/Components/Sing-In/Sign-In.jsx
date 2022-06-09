@@ -37,9 +37,15 @@ const Signin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("username:", username, "password: ", password);
+
+
+
 
     console.log(users);
+
+
+    console.log("username:", username, "password: ", password);
+
 
     const user = users.find((user) => user.name === username);
     if (user) {
@@ -60,7 +66,8 @@ const Signin = () => {
             container
             spacing={3}
             direction={"column"}
-            justify={"center"}
+            justifyContent={"center"}
+
             alignItems={"center"}
           >
             <form onSubmit={handleSubmit}>
